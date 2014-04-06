@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<link rel="shortcut icon" href="https://raw.githubusercontent.com/auremoser/brck/master/assets/logo/BRCK-IDENTITYMARK-INV-20140406-favicon.ico" >
 		<title>BRCK Report</title>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script type="text/javascript" src="js/embed-adjust.js"></script>
@@ -11,8 +12,8 @@
 					padding-top: 5px;
 					padding-left: 10px;
 		}
-		h1, h2, h3, h4 {
-			font-family: sans-serif !important;
+		h1, h2, h3, h4, span {
+			font-family: Verdana, Geneva, sans-serif !important;
 			margin-left: 15px;
 		}
 		.logo img {
@@ -20,20 +21,25 @@
 			position: relative;
 			float: left;
 			margin-right: 25px;
-			    margin-right-value: 25px;
-			    margin-right-ltr-source: physical;
-			    margin-right-rtl-source: physical;
+		}
+		#charts {
+			margin-left: 15px;
 		}
 	</style>
 	<body>
-		<a href="http://www.brck.com/" title="Return to the homepage" id="logo">
-  			<img src="/assets/logo/BRCK-WORDMARK-HORIZ-INV.png" alt="BRCK logo" />
-		</a>
-		<h4>BRCK PTO Summary - April 2014</h4>
+		<div id="header">
+			<a id="logo" href="http://www.brck.com/" title="Return to the homepage">
+  				<img src="/assets/logo/BRCK-WORDMARK-HORIZ-INV.png" alt="BRCK logo" />
+			</a>
+			<span><b>BRCK PTO Summary - April 2014</b></span>
+		</div>
+		<div id="charts">
 			<!-- Paste Chart iFrame here -->
-					<iframe width="700" height="400" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?containerId=googft-gviz-canvas&amp;q=select+col2%2C+col5%2C+col6%2C+col7%2C+col8+from+1eP6C2wsRnMloAyNgoMv3uUfLzP4IbDx0CUj1TXDE+where+col0+%3E%3D+&#39;2014-03-31+00%3A00%3A00&#39;+and+col0+%3C%3D+&#39;2014-04-07+00%3A00%3A00&#39;+and+col2+in+(&#39;Emmanuel&#39;%2C+&#39;Jackline&#39;%2C+&#39;Janet&#39;%2C+&#39;Wesley&#39;)+order+by+col2+asc+limit+10&amp;viz=GVIZ&amp;t=BAR&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;gco_useFirstColumnAsDomain=true&amp;gco_isStacked=false&amp;gco_booleanRole=certainty&amp;gco_hAxis=%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22logScale%22%3Afalse%2C+%22title%22%3A%22%22%7D&amp;gco_vAxes=%5B%7B%22useFormatFromData%22%3Atrue%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22viewWindow%22%3Anull%2C+%22viewWindowMode%22%3Anull%2C+%22title%22%3A%22Team+Members%22%2C+%22titleTextStyle%22%3A%7B%22color%22%3A%22%23434343%22%2C+%22fontSize%22%3A%2211%22%2C+%22italic%22%3Afalse%2C+%22bold%22%3Atrue%7D%2C+%22textStyle%22%3A%7B%22color%22%3A%22%23666666%22%2C+%22fontSize%22%3A12%2C+%22bold%22%3Afalse%7D%7D%2C%7B%22useFormatFromData%22%3Atrue%7D%5D&amp;gco_legend=bottom&amp;gco_title=BRCK+Summary+Values&amp;gco_legendTextStyle=%7B%22color%22%3A%22%23666666%22%2C+%22fontSize%22%3A12%7D&amp;gco_titleTextStyle=%7B%22color%22%3A%22%23434343%22%2C+%22fontSize%22%3A%2214%22%2C+%22bold%22%3Atrue%7D&amp;gco_fontName=Verdana&amp;gco_series=%7B%220%22%3A%7B%22color%22%3A%22%23e69138%22%7D%2C+%221%22%3A%7B%22color%22%3A%22%23f1c232%22%7D%2C+%222%22%3A%7B%22color%22%3A%22%236aa84f%22%7D%2C+%223%22%3A%7B%22color%22%3A%22%233d85c6%22%7D%7D&amp;width=700&amp;height=400"></iframe>
+					<iframe width="650" height="400" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?containerId=googft-gviz-canvas&amp;q=select+col2%2C+col5%2C+col6%2C+col7%2C+col8+from+1eP6C2wsRnMloAyNgoMv3uUfLzP4IbDx0CUj1TXDE+where+col0+%3E%3D+&#39;2014-03-31+00%3A00%3A00&#39;+and+col0+%3C%3D+&#39;2014-04-07+00%3A00%3A00&#39;+and+col2+in+(&#39;Emmanuel&#39;%2C+&#39;Jackline&#39;%2C+&#39;Janet&#39;%2C+&#39;Wesley&#39;)+order+by+col2+asc+limit+10&amp;viz=GVIZ&amp;t=BAR&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;gco_useFirstColumnAsDomain=true&amp;gco_isStacked=false&amp;gco_booleanRole=certainty&amp;gco_hAxis=%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22logScale%22%3Afalse%2C+%22title%22%3A%22%22%7D&amp;gco_vAxes=%5B%7B%22useFormatFromData%22%3Atrue%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22viewWindow%22%3Anull%2C+%22viewWindowMode%22%3Anull%2C+%22title%22%3A%22Team+Members%22%2C+%22titleTextStyle%22%3A%7B%22color%22%3A%22%23434343%22%2C+%22fontSize%22%3A%2211%22%2C+%22italic%22%3Afalse%2C+%22bold%22%3Atrue%7D%2C+%22textStyle%22%3A%7B%22color%22%3A%22%23666666%22%2C+%22fontSize%22%3A12%2C+%22bold%22%3Afalse%7D%7D%2C%7B%22useFormatFromData%22%3Atrue%7D%5D&amp;gco_legend=bottom&amp;gco_title=BRCK+Summary+Values&amp;gco_legendTextStyle=%7B%22color%22%3A%22%23666666%22%2C+%22fontSize%22%3A12%7D&amp;gco_titleTextStyle=%7B%22color%22%3A%22%23434343%22%2C+%22fontSize%22%3A%2214%22%2C+%22bold%22%3Atrue%7D&amp;gco_fontName=Verdana&amp;gco_series=%7B%220%22%3A%7B%22color%22%3A%22%23e69138%22%7D%2C+%221%22%3A%7B%22color%22%3A%22%23f1c232%22%7D%2C+%222%22%3A%7B%22color%22%3A%22%236aa84f%22%7D%2C+%223%22%3A%7B%22color%22%3A%22%233d85c6%22%7D%7D&amp;width=700&amp;height=400"></iframe>
+
 			<!-- Paste Report Card iFrame here -->
-					<iframe width="600" height="400" scrolling="yes" frameborder="no" src="https://www.google.com/fusiontables/embedviz?viz=CARD&amp;q=select+*+from+1eP6C2wsRnMloAyNgoMv3uUfLzP4IbDx0CUj1TXDE+where+col0+%3E%3D+&#39;2014-03-31+00%3A00%3A00&#39;+and+col0+%3C%3D+&#39;2014-04-07+00%3A00%3A00&#39;+order+by+col1+asc&amp;tmplt=1&amp;cpr=1"></iframe>
+					<iframe width="700" height="400" scrolling="yes" frameborder="no" src="https://www.google.com/fusiontables/embedviz?viz=CARD&amp;q=select+*+from+1eP6C2wsRnMloAyNgoMv3uUfLzP4IbDx0CUj1TXDE+where+col0+%3E%3D+&#39;2014-03-31+00%3A00%3A00&#39;+and+col0+%3C%3D+&#39;2014-04-07+00%3A00%3A00&#39;+order+by+col1+asc&amp;tmplt=1&amp;cpr=1"></iframe>
+		</div>
 
 	</body>
 </html>
